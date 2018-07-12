@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("./Fonts/HelveticaRegular.eot");
+  src: url("./Fonts/HelveticaRegular.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/HelveticaRegular.woff") format("woff"),
+    url("./Fonts/HelveticaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("./Fonts/HelveticaBold.eot");
+  src: local("HelveticaBold"), local("HelveticaBold"),
+    url("./Fonts/HelveticaBold.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/HelveticaBold.woff") format("woff"),
+    url("./Fonts/HelveticaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GeometriaMedium";
+  src: url("./Fonts/Geometria-Medium.eot");
+  src: url("./Fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/Geometria-Medium.woff") format("woff"),
+    url("./Fonts/Geometria-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GeometriaLight";
+  src: url("./Fonts/Geometria-Light.eot");
+  src: url("./Fonts/Geometria-Light.eot?#iefix") format("embedded-opentype"),
+    url("./Fonts/Geometria-Light.woff") format("woff"),
+    url("./Fonts/Geometria-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DSDigitalBoldItalic";
+  src: url("./Fonts/ds-digital-bold-italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "basis33";
+  src: url("./Fonts/basis33.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header-link {
+  margin-left: 48px;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 30px;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 30px;
+  }
+}
+
+
+@keyframes draw {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: -99.47578430175781;
+    fill: transparent;
+    /* transform: translateY(0px); */
+  }
+  
+  35% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  
+  60% {
+    fill: #18daf7;
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+  
+  100% {
+    fill: #18daf7;
+    stroke-dashoffset: 0;
+    opacity: 1;
+    /* transform: translateY(-10px); */
+  }
+}
+
+svg.animate path {
+  animation: 1.9s ease forwards draw;
+  opacity:1;
+}
+
+form input.error{
+  border: 1px solid #ac0000;
+}
